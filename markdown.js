@@ -189,7 +189,8 @@ function handleImage(imageInfo) {
 
     // 示例：修改图片 URL（例如添加前缀或替换域名）
     let newUrl = imageInfo.url;
-    newUrl = `${Date.now()}.png`
+    // 随机数   
+    newUrl = `${Date.now() + (Math.random() * 1000).toFixed()}.png`
 
     downloadImageByUrl(imageInfo.url, newUrl);
 
