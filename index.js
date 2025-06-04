@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   getTitleButton.addEventListener('click', function () {
 
-    titleDisplay.textContent = 'GO正在获取...'
+    titleDisplay.textContent = '正在获取...'
     chrome.scripting.executeScript(
       {
         target: { tabId: activeTab.id },
@@ -22,24 +22,19 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (injectionResults && injectionResults.length > 0 && injectionResults[0].result) {
           const content = injectionResults[0].result;
           // console.log('content', content)
-          const markdown = await convertHTMLToMarkdown(content, console.log)
+          let markdown = await convertHTMLToMarkdown(content, console.log)
+
+
+          markdown = parseMarkdownImages(markdown, handleImage)
+
+          // downloadTextAsFile(markdown, 'index.md')
 
           titleDisplay.textContent = `HTML获取成功,已复制到剪贴板`;
+          console.log('markdwon', markdown)
           // 复制到剪贴板
-          navigator.clipboard.writeText(markdown)
-          // .then(
-          //   function () {
-          //     copyButton.textContent = '已复制';
-          //     setTimeout(function () {
-          //       copyButton.textContent = '复制';
-          //     }, 2000);
-          //   },
-          //   function (err) {
-          //     console.error('无法复制到剪贴板: ', err);
-          //   }
-          // );
-          // 你也可以使用 alert(pageTitle); 来弹窗显示
-          // alert(pageTitle);
+          // navigator.clipboard.writeText(markdown)
+          downloadTextAsFile(markdown, `${Date.now()}.md`)
+
         } else {
           titleDisplay.textContent = '未能获取到标题。';
         }

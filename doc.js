@@ -24,6 +24,6 @@ function getContent() {
     }
 
     html = editorDocument.querySelector('.bulb-editor').innerHTML;
-    console.log('html', html)
+    // console.log('html', html)
     return html;
 }
