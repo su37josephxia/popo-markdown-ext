@@ -1,0 +1,504 @@
+<div data-bulb-node-id="H3hH-1744707578519" data-block-type="code" wrap="false" class=" code-theme-default css-199gmon"
+    style="clear: both;">
+    <div class="change-language-toolbar plain css-acwcor"><label data-bulb-event-dispose="true"
+            class="change-language css-1povu0j" style="margin-left: 15px; width: max-content;">
+            <div disabled="" class="css-1m4h5jr">
+                <div class="" style="min-width: 80px;">
+                    <div class="disabled css-1s9ujxn" disabled=""><span class="css-u30aqu">Plain Text</span><span
+                            class="css-1tg1tth"><svg width="10" height="24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 10H2l3 4 3-4z" fill="#A6A6A6"></path>
+                            </svg></span></div>
+                </div>
+            </div>
+        </label>
+        <div style="flex: 1 1 0%; text-align: right; line-height: 16px; font-size: 12px;">自动换行</div><label
+            data-bulb-event-dispose="true" class="css-1povu0j" style="margin-right: 15px;"><button type="button"
+                role="switch" aria-checked="false" disabled="" class="ant-switch ant-switch-disabled"><span
+                    class="ant-switch-inner"></span></button></label>
+    </div>
+    <div class="bulb-scroll css-18o0tcq" style="overflow-x: auto; width: inherit; cursor: auto;">
+        <div style="width: max-content;">
+            <pre data-bulb-node-id="zhBv-1744707578518" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Fa47-1744707578517"><code class="token plain ">management:</code></span></pre>
+            <pre data-bulb-node-id="JdZo-1744707579854" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="pnfV-1744707579853"><code class="token plain ">  server:</code></span></pre>
+            <pre data-bulb-node-id="wgee-1744707579856" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="kPF7-1744707579855"><code class="token plain ">    port: 9091 # 修改点：端口</code></span></pre>
+            <pre data-bulb-node-id="dvyj-1744707579858" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="kokT-1744707579857"><code class="token plain ">  metrics:</code></span></pre>
+            <pre data-bulb-node-id="FLjU-1744707579860" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="AFm9-1744707579859"><code class="token plain ">    export:</code></span></pre>
+            <pre data-bulb-node-id="27kY-1744707579862" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="KMbe-1744707579861"><code class="token plain ">      prometheus:</code></span></pre>
+            <pre data-bulb-node-id="VX5u-1744707579864" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="65rf-1744707579863"><code class="token plain ">        enabled: true</code></span></pre>
+            <pre data-bulb-node-id="Dyyh-1744707579866" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="eHh9-1744707579865"><code class="token plain ">    tags:</code></span></pre>
+            <pre data-bulb-node-id="7i0S-1744707579868" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Dmxy-1744707579867"><code class="token plain ">      application: ${spring.application.id}</code></span></pre>
+            <pre data-bulb-node-id="Gk2k-1744707579870" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="iUtV-1744707579869"><code class="token plain ">  endpoints:</code></span></pre>
+            <pre data-bulb-node-id="zpkO-1744707579872" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="E5hD-1744707579871"><code class="token plain ">    web:</code></span></pre>
+            <pre data-bulb-node-id="nYTT-1744707579874" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="hOLh-1744707579873"><code class="token plain ">      base-path: /management</code></span></pre>
+            <pre data-bulb-node-id="wBcO-1744707579876" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="pl54-1744707579875"><code class="token plain ">      exposure:</code></span></pre>
+            <pre data-bulb-node-id="kV9T-1744707579878" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="H3ZG-1744707579877"><code class="token plain ">        include:</code></span></pre>
+            <pre data-bulb-node-id="apU8-1744707579880" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="ByFu-1744707579879"><code class="token plain ">        - health</code></span></pre>
+            <pre data-bulb-node-id="ukcu-1744707579882" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="QtOw-1744707579881"><code class="token plain ">        - prometheus</code></span></pre>
+            <pre data-bulb-node-id="100f-1744707579884" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="iWOu-1744707579883"><code class="token plain ">logging:</code></span></pre>
+            <pre data-bulb-node-id="FUCA-1744707579886" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Mxou-1744707579885"><code class="token plain ">  file:</code></span></pre>
+            <pre data-bulb-node-id="CufV-1744707579888" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="y1F1-1744707579887"><code class="token plain ">    path: ${user.home}</code></span></pre>
+            <pre data-bulb-node-id="q5q6-1744707579890" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="i7ma-1744707579889"><code class="token plain ">  path: ${logging.file.path}</code></span></pre>
+            <pre data-bulb-node-id="x8D8-1744707579892" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="NKAZ-1744707579891"><code class="token plain ">spring:</code></span></pre>
+            <pre data-bulb-node-id="0fj2-1744707579894" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="crvq-1744707579893"><code class="token plain ">  mvc:</code></span></pre>
+            <pre data-bulb-node-id="LIVu-1744707579896" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="qugG-1744707579895"><code class="token plain ">    static-path-pattern: /**</code></span></pre>
+            <pre data-bulb-node-id="FsIR-1744707579898" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="nGh1-1744707579897"><code class="token plain ">  resources:</code></span></pre>
+            <pre data-bulb-node-id="FTlf-1744707579900" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="WvRP-1744707579899"><code class="token plain ">    static-locations[0]: classpath:/static/</code></span></pre>
+            <pre data-bulb-node-id="y2Ii-1744707579902" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="qCNz-1744707579901"><code class="token plain ">    static-locations[1]: classpath:/static/assets/</code></span></pre>
+            <pre data-bulb-node-id="N4Yt-1744707579904" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="ZA6w-1744707579903"><code class="token plain ">    static-locations[2]: classpath:/static/packages/</code></span></pre>
+            <pre data-bulb-node-id="aBOv-1744707579906" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="L22b-1744707579905"><code class="token plain ">  main:</code></span></pre>
+            <pre data-bulb-node-id="UyKp-1744707579908" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="MG3M-1744707579907"><code class="token plain ">    lazy-initialization: false</code></span></pre>
+            <pre data-bulb-node-id="heCX-1744707579910" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="TVk6-1744707579909"><code class="token plain ">  application:</code></span></pre>
+            <pre data-bulb-node-id="8sjP-1744707579912" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="MJDR-1744707579911"><code class="token plain ">    name: lcbh</code></span></pre>
+            <pre data-bulb-node-id="EC8j-1744707579914" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="RsJu-1744707579913"><code class="token plain ">    id: 416e03ff-e526-4fce-aa03-5b9bc553b844</code></span></pre>
+            <pre data-bulb-node-id="g1lk-1744707579916" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="OJHX-1744707579915"><code class="token plain ">  liquibase:</code></span></pre>
+            <pre data-bulb-node-id="h0ZT-1744707579918" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="DMjG-1744707579917"><code class="token plain ">    enabled: false</code></span></pre>
+            <pre data-bulb-node-id="5jEW-1744707579920" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Kvga-1744707579919"><code class="token plain ">  initDatabase:</code></span></pre>
+            <pre data-bulb-node-id="BiGX-1744707579922" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="0bhk-1744707579921"><code class="token plain ">    enabled: false</code></span></pre>
+            <pre data-bulb-node-id="3Nlf-1744707579924" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="f0RF-1744707579923"><code class="token plain ">  quartz:</code></span></pre>
+            <pre data-bulb-node-id="t3pT-1744707579926" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="V1H5-1744707579925"><code class="token plain ">    enabled: true</code></span></pre>
+            <pre data-bulb-node-id="10Xm-1744707579928" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="AuFi-1744707579927"><code class="token plain ">  devtools:</code></span></pre>
+            <pre data-bulb-node-id="QqVg-1744707579930" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="6HWn-1744707579929"><code class="token plain ">    restart:</code></span></pre>
+            <pre data-bulb-node-id="mRdC-1744707579932" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="4Q1B-1744707579931"><code class="token plain ">      enabled: false</code></span></pre>
+            <pre data-bulb-node-id="tcWq-1744707579934" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="3mqv-1744707579933"><code class="token plain ">    livereload:</code></span></pre>
+            <pre data-bulb-node-id="PbjM-1744707579936" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="2iZ7-1744707579935"><code class="token plain ">      enabled: false</code></span></pre>
+            <pre data-bulb-node-id="lAqo-1744707579938" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="yfhg-1744707579937"><code class="token plain ">  datasource:</code></span></pre>
+            <pre data-bulb-node-id="xfhh-1744707579940" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="cMbU-1744707579939"><code class="token plain ">    type: com.zaxxer.hikari.HikariDataSource</code></span></pre>
+            <pre data-bulb-node-id="7JCX-1744707579942" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="udOe-1744707579941"><code class="token plain ">    driver-class-name: com.mysql.cj.jdbc.Driver</code></span></pre>
+            <pre data-bulb-node-id="aYLM-1744707594431" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="AJOE-1744707594430"><code class="token plain ">     # 修改点：数据库配置</code></span></pre>
+            <pre data-bulb-node-id="X2l8-1744707579944" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="0Uyi-1744707579943"><code class="token plain ">    url: jdbc:mysql://172.16.8.190:3306/lcbh-prod?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;useLegacyDatetimeCode=false&amp;serverTimezone=Asia/Shanghai&amp;nullCatalogMeansCurrent=true&amp;zeroDateTimeBehavior=CONVERT_TO_NULL</code></span></pre>
+            <pre data-bulb-node-id="B1by-1744707579946" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="hoBe-1744707579945"><code class="token plain ">    username: luchan189</code></span></pre>
+            <pre data-bulb-node-id="wzBA-1744707579948" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="pQvk-1744707579947"><code class="token plain ">    password: xxx</code></span></pre>
+            <pre data-bulb-node-id="avqh-1744707579950" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="zvDf-1744707579949"><code class="token plain ">    connection-timeout: 3000</code></span></pre>
+            <pre data-bulb-node-id="lww3-1744707579952" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="jaE1-1744707579951"><code class="token plain ">    hikari:</code></span></pre>
+            <pre data-bulb-node-id="RUiA-1744707579954" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="ae6s-1744707579953"><code class="token plain ">      poolName: Hikari</code></span></pre>
+            <pre data-bulb-node-id="CKa6-1744707579956" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="P8lH-1744707579955"><code class="token plain ">      auto-commit: false</code></span></pre>
+            <pre data-bulb-node-id="vkU8-1744707579958" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="7JCM-1744707579957"><code class="token plain ">      data-source-properties:</code></span></pre>
+            <pre data-bulb-node-id="U8ct-1744707579960" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="p5kM-1744707579959"><code class="token plain ">        cachePrepStmts: true</code></span></pre>
+            <pre data-bulb-node-id="INfd-1744707579962" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="yahg-1744707579961"><code class="token plain ">        prepStmtCacheSize: 250</code></span></pre>
+            <pre data-bulb-node-id="ty1z-1744707579964" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="T104-1744707579963"><code class="token plain ">        prepStmtCacheSqlLimit: 2048</code></span></pre>
+            <pre data-bulb-node-id="xEw4-1744707579966" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="12Gf-1744707579965"><code class="token plain ">        useServerPrepStmts: true</code></span></pre>
+            <pre data-bulb-node-id="7O3K-1744707579968" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="idtA-1744707579967"><code class="token plain ">  servlet:</code></span></pre>
+            <pre data-bulb-node-id="oaYK-1744707579970" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="qwgc-1744707579969"><code class="token plain ">    multipart:</code></span></pre>
+            <pre data-bulb-node-id="i8zX-1744707579972" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="lYmn-1744707579971"><code class="token plain ">      max-file-size: 50MB</code></span></pre>
+            <pre data-bulb-node-id="leYi-1744707579974" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="hmvH-1744707579973"><code class="token plain ">      max-request-size: 50MB</code></span></pre>
+            <pre data-bulb-node-id="GvEo-1744707579976" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="zXWZ-1744707579975"><code class="token plain ">  messages:</code></span></pre>
+            <pre data-bulb-node-id="aAKg-1744707579978" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="593s-1744707579977"><code class="token plain ">    basename: i18n/messages</code></span></pre>
+            <pre data-bulb-node-id="djyV-1744707579980" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="06NI-1744707579979"><code class="token plain ">mybatis:</code></span></pre>
+            <pre data-bulb-node-id="3bgF-1744707579982" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="ElaL-1744707579981"><code class="token plain ">  mapper-locations: classpath*:mappings/**/*Mapper.xml</code></span></pre>
+            <pre data-bulb-node-id="qJJp-1744707579984" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="DC2i-1744707579983"><code class="token plain ">  type-handlers-package: com.zhjt.lcbh.repository.handler</code></span></pre>
+            <pre data-bulb-node-id="PjbO-1744707579986" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="uvSG-1744707579985"><code class="token plain ">  configuration:</code></span></pre>
+            <pre data-bulb-node-id="s9U8-1744707579988" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Oxlm-1744707579987"><code class="token plain ">    database-id: mysql</code></span></pre>
+            <pre data-bulb-node-id="KnDH-1744707579990" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="8YE7-1744707579989"><code class="token plain ">    default-enum-type-handler: com.zhjt.lcbh.repository.handler.AutoEnumTypeHandler</code></span></pre>
+            <pre data-bulb-node-id="nDVM-1744707579992" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="3nDz-1744707579991"><code class="token plain ">    call-setters-on-nulls: true</code></span></pre>
+            <pre data-bulb-node-id="IiTG-1744707579994" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="eUDt-1744707579993"><code class="token plain ">server:</code></span></pre>
+            <pre data-bulb-node-id="zvVD-1744707579996" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="XUEu-1744707579995"><code class="token plain ">  port: 8081  # 修改点：端口</code></span></pre>
+            <pre data-bulb-node-id="eegG-1744707579998" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="4wNE-1744707579997"><code class="token plain ">  compression:</code></span></pre>
+            <pre data-bulb-node-id="E41d-1744707580000" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Sfcy-1744707579999"><code class="token plain ">    enabled: true</code></span></pre>
+            <pre data-bulb-node-id="bbBY-1744707580002" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="HVil-1744707580001"><code class="token plain ">    mime-types: text/html,text/xml,text/plain,text/css, application/javascript, application/json</code></span></pre>
+            <pre data-bulb-node-id="KKcw-1744707580004" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="VQYK-1744707580003"><code class="token plain ">    min-response-size: 1024</code></span></pre>
+            <pre data-bulb-node-id="zxB6-1744707580006" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="v2li-1744707580005"><code class="token plain ">lcp:</code></span></pre>
+            <pre data-bulb-node-id="LMmy-1744707580008" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="r2U8-1744707580007"><code class="token plain ">  snowflakeNodeId: null</code></span></pre>
+            <pre data-bulb-node-id="8qE7-1744707580010" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="y2yR-1744707580009"><code class="token plain ">  authCenter:</code></span></pre>
+            <pre data-bulb-node-id="KYqU-1744707580012" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="81CS-1744707580011"><code class="token plain ">    enable: true</code></span></pre>
+            <pre data-bulb-node-id="6uTb-1744707580014" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="zbDq-1744707580013"><code class="token plain ">    address: http://nuims.low-code:8081/nuims</code></span></pre>
+            <pre data-bulb-node-id="NAEy-1744707580016" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="azuk-1744707580015"><code class="token plain ">    host: nuims.low-code</code></span></pre>
+            <pre data-bulb-node-id="X20Z-1744707580018" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="vRO4-1744707580017"><code class="token plain ">    security:</code></span></pre>
+            <pre data-bulb-node-id="XVHi-1744707580020" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="XzBi-1744707580019"><code class="token plain ">      lockMilliseconds: 900000</code></span></pre>
+            <pre data-bulb-node-id="9wrD-1744707580022" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="tVqq-1744707580021"><code class="token plain ">      maxFailureTimes: 5</code></span></pre>
+            <pre data-bulb-node-id="o9wA-1744707580024" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="0EqO-1744707580023"><code class="token plain ">    taskEnable: true</code></span></pre>
+            <pre data-bulb-node-id="1hms-1744707612536" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="MDbU-1744707612535"><code class="token plain ">     # 修改点：权限配置</code></span></pre>
+            <pre data-bulb-node-id="oPea-1744707580026" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="SimB-1744707580025"><code class="token plain ">    noAuthPaths: /api/lcplogics/customSequenceLogic:POST,/api/lcplogics/getUserInfoByName:POST,/api/lcplogics/setVerificationCode:POST,/api/lcplogics/LCAPLoginNormal:POST,/api/lcplogics/verifyVenCode:POST,/api/lcplogics/getMyDepartInfo:POST,/api/lcplogics/javalogic1:POST,/api/lcplogics/LCAPUpdateNormalUser:POST,/api/lcplogics/verifyPassword:POST,/api/lcplogics/getdeptId:POST,/api/lcplogics/switchUser:POST,/api/lcplogics/showSysMsg:POST,/api/lcplogics/getRoleByuserId:POST,/api/lcplogics/getUserList:POST,/api/lcplogics/LCAPCreateRootDept:POST,/api/lcplogics/LCAPCreateIdeRoleDataPermission:POST,/api/lcplogics/LCAPGetDeptList:POST,/api/lcplogics/loadDIctItemListById:POST,/api/lcplogics/getunit:POST,/api/lcplogics/selectTableInfo:POST,/api/lcplogics/loadFacilityManageTableView_1:POST,/api/facility:PUT,/api/facility:DELETE,/api/facility:POST,/api/lcplogics/loadSysDictTableView_2:POST,/api/lcplogics/findAllRoads:POST,/api/lcplogics/findAllLocationTypes:POST,/api/lcplogics/loadRoadManageTableView_1:POST,/api/lcplogics/loadRoadManageTableView_6:POST,/api/road:PUT,/api/road:DELETE,/api/road:POST,/api/direction:PUT,/api/direction:DELETE,/api/direction:POST,/api/lcplogics/loadFileTemplate:POST,/api/file-template/createOrUpdate:POST,/api/lcplogics/loadOperationLog:POST,/api/lcplogics/getDictParentByItemValue:POST,/api/highway-properties-price:PUT,/api/highway-properties-price:POST,/api/lcplogics/getDictItemByClassCode:POST,/api/highway-properties-price:GET,/api/lcplogics/loadNewmergencyResponseSelect_5:POST,/api/claims-event:PUT,/api/lcplogics/getEventTypeItemList:POST,/api/lcplogics/getEventType:POST,/api/lcplogics/loadAllDisplayName:POST,/api/lcplogics/loadSysEventHandleTimeMgrTableView_1:POST,/api/sys-event-handle-info-standard-time-mgr:DELETE,/api/sys-event-handle-info-standard-time-mgr:PUT,/api/sys-event-handle-info-standard-time-mgr:POST,/api/lcplogics/loadCodeRuleMTableView_1:POST,/api/sys-code-rule-mgr:DELETE,/api/sys-code-rule-mgr:PUT,/api/sys-code-rule-mgr:POST,/api/common-events-docs:GET,/api/common-accident-offender:GET,/api/common-event:GET,/api/lcplogics/getDocContentByType:POST,/api/lcplogics/loadElectronicSignatureListByCommonId:POST,/api/lcplogics/saveInformedBookNo:POST,/api/lcplogics/selectOrderListByOffendId:POST,/api/lcplogics/loadEscapeOffenderOrderList:POST,/api/currency_convert/rmbToBig:POST,/api/lcplogics/loadDocTempTableView_2:POST,/api/sys-doc-temp:PUT,/api/sys-doc-temp:POST,/api/lcplogics/LCAPGetDeptIdByUserId:POST,/api/spot-check-quetions:POST,/api/lcplogics/sendMsg:POST,/api/lcplogics/loadEditmergencyResponseTableView_1:POST,/api/spot-check-quetions:DELETE,/api/event-handle-info:GET,/api/lcplogics/getEventHandleInfoRecords:POST,/api/event-info:GET,/api/lcplogics/getEventTypeSelectedList:POST,/api/lcplogics/loadNotice:POST,/api/sys-notice:PUT,/api/lcplogics/findAllDirectionByRoadId:POST,/api/lcplogics/selectFaciltyByRoad:POST,/api/common-accident-offender:POST,/api/lcplogics/getDepartAndParentById:POST,/api/lcplogics/getDisplayNameByUserName:POST,/api/freemarker_tool/createFile:POST,/api/common-events-docs:POST,/api/common-pay-way:POST,/api/common-payment-record:GET,/api/spot-check-quetions:PUT,/api/common-event:PUT,/api/lcplogics/getPriceLibBigClass:POST,/api/lcplogics/getRoadLossOrderList:POST,/api/lcplogics/selectCommonOrderList:POST,/api/lcplogics/findAllSysEventTypeItem:POST,/api/lcplogics/getHightwaySmallClassDet:POST,/api/home-background-conf:PUT,/api/lcplogics/saveHomeBackgroundConf:POST,/api/home-background-conf:GET,/api/lcplogics/AllCar:POST,/api/lcplogics/loadResponseEventFormSelect_1:POST,/api/highway-property-loss-order:DELETE,/api/joint-loss-order/batch:DELETE,/api/highway-property-loss-order/createOrUpdate:POST,/api/joint-loss-order/createOrUpdate:POST,/api/event-handle-info:PUT,/api/highway-property-loss-order/batch:DELETE,/api/lcplogics/getEventHandleById:POST,/api/lcplogics/selectEscapeOrderLisr:POST,/api/lcplogics/getEventHandleTimeMgr:POST,/api/lcplogics/getRoadLossOrderListNotCoalition:POST,/api/lcplogics/getJointLossOrder:POST,/api/lcplogics/getJointAssessLossOrderList1:POST,/api/lcplogics/getJointAssessLossOrderList2:POST,/api/lcplogics/getJointList:POST,/api/lcplogics/getJointAssessLossOrderDetailList:POST,/api/lcplogics/loadCarsManageTableView_1:POST,/api/vehicle-management:PUT,/api/vehicle-management:POST,/api/lcplogics/LCAPGetDept:POST,/api/lcplogics/getEventTypeList:POST,/api/lcplogics/loadSysDictTableView_1:POST,/api/sys-dict-item:DELETE,/api/sys-dict-class:PUT,/api/sys-dict-item/createOrUpdate:POST,/api/sys-dict-class:POST,/api/sys-dict-item:POST,/api/lcplogics/getPriceLibCommonClass:POST,/api/lcplogics/loadHightwayPropertiesPriceTableView_1:POST,/api/lcplogics/getHighwayProperties:POST,/api/highway-properties-price/batch:PUT,/api/lcplogics/LCAPGetChildDepts:POST,/api/lcplogics/LCAPGetDeptUsers:POST,/api/lcplogics/LCAPSetDeptLeader:POST,/api/lcplogics/LCAPLoadDeptSetLeaderSelect:POST,/api/lcplogics/LCAPBatchAddDeptUser:POST,/api/lcplogics/LCAPLoadDeptAddUserSelect:POST,/api/lcplogics/LCAPCancelDeptLeader:POST,/api/lcplogics/LCAPBatchUpdateDeptUser:POST,/api/lcplogics/LCAPBatchDeleteDepartment:POST,/api/lcplogics/LCAPSearchDepts:POST,/api/lcplogics/LCAPBatchRemoveDeptUser:POST,/api/lcplogics/LCAPLoadRoleManagementTableView:POST,/api/l-c-a-p-role:GET,/api/l-c-a-p-data-permission:PUT,/api/l-c-a-p-data-permission:POST,/api/l-c-a-p-column-rule/batch:PUT,/api/l-c-a-p-column-rule/batch:POST,/api/l-c-a-p-row-rule-item/by:DELETE,/api/l-c-a-p-row-rule-item/batch:POST,/api/lcplogics/LCAPGetUserByUserIds:POST,/api/l-c-a-p-user-role-mapping/batch:POST,/api/l-c-a-p-user-role-mapping:DELETE,/api/lcplogics/LCAPGetMappingDeleteByRoleIdAndPermissionId:POST,/api/l-c-a-p-role-per-mapping/batch:POST,/api/l-c-a-p-role:POST,/api/l-c-a-p-role:PUT,/api/l-c-a-p-role:DELETE,/api/lcplogics/LCAPGetUserTableView:POST,/api/l-c-a-p-user:PUT,/api/lcplogics/LCAPLoadUserManagementSelect:POST,/api/l-c-a-p-user:DELETE,/api/l-c-a-p-user-dept-mapping/by:DELETE,/api/lcplogics/selectEventList:POST,/api/lcplogics/LCAPGetPermissionResourseNotRelated:POST,/api/lcplogics/LCAPLoadPermissionManagementTableView:POST,/api/lcplogics/LCAPGetPermissionResourceRelated:POST,/api/lcplogics/LCAPGetPerResMappingByPermissionId:POST,/api/l-c-a-p-permission:PUT,/api/l-c-a-p-per-res-mapping/batch:POST,/api/l-c-a-p-per-res-mapping/batch:DELETE,/api/l-c-a-p-permission:POST,/api/l-c-a-p-permission:DELETE,/api/common-event/batch:PUT,/api/sys-notice:POST,/api/sys-notice:GET,/api/lcplogics/getUserInfoByUserId:POST,/api/claims-event:GET,/api/lcplogics/loadAccidentOrderPayWayList:POST,/api/common-payment-record:POST,/api/common-pay-way:PUT,/api/common-accident-offender:DELETE,/api/common-pay-way/createOrUpdate:POST,/api/common-pay-way:DELETE,/api/common-payment-record:DELETE,/api/lcplogics/selectEscapeOrderLisrPC:POST,/api/lcplogics/loadAllOrderByCommonId:POST,/api/lcplogics/getProcessNodeList:POST,/api/lcplogics/getProcessRecordList:POST,/api/lcplogics/getLitigationInfo:POST,/api/lcplogics/getAllGeneralCaseList:POST,/api/lcplogics/getPriceLibSmallClass:POST,/api/lcplogics/filterSelectHighWayPriceList:POST,/api/common-events-docs/createOrUpdate:POST,/api/common-accident-offender:PUT,/api/electronic-signature/batch:PUT,/api/test/createOrUpdate:POST,/api/lcplogics/getTaskIdByProcInstId:POST,/api/lcplogics/getUserNameByDeptIdAndRoleName:POST,/api/lcplogics/getCurrentDeptDutyUser:POST,/api/lcplogics/getUserInfo:POST,/api/lcplogics/getUserInfoByid:POST,/api/lcplogics/getPersonnelSchedulingList:POST,/api/lcplogics/findAllSchedulingRecords:POST,/api/lcplogics/getCurrentAllRole:POST,/api/lcplogics/findAllDeptByParentId:POST,/api/lcplogics/findAllDeptByDeptId:POST,/api/lcplogics/getPersonnelSchedulingListByDate:POST,/api/personnel-scheduling/batch:POST,/api/lcplogics/selectApplicationRecord:POST,/api/lcplogics/getClaimsNumByEventId:POST,/api/claims-event:POST,/api/lcplogics/updateLitigationPaidAmount:POST,/api/lcplogics/launchOrSubmitProcess:POST,/api/lcplogics/loadLawsuitClaimsEventPayWayList:POST,/api/lcplogics/getDisplayNamesByUserName:POST,/api/common-events-docs:PUT,/api/common-union-evidentiary-material/createOrUpdate:POST,/api/common-union-evidentiary-material:PUT,/api/lcplogics/withdrawMyLossProcess:POST,/api/lcplogics/createProcessNodeAndRecord:POST,/api/lcplogics/getOffCompensationAmount:POST,/api/lcplogics/getCompensationAmount:POST,/api/claims-event/batch:POST,/api/claims-event/batch:PUT,/api/lcplogics/terminateClaims:POST,/api/lcplogics/loadClaimsEventListByEventId:POST,/api/direction:GET,/api/lcplogics/getEventInfoByEventHandId:POST,/api/lcplogics/selectAllHighwayPropertyLossOrder:POST,/api/lcplogics/getOffByCommonId:POST,/api/lcplogics/getEventInfosCars:POST,/api/lcplogics/getCarsList:POST,/api/lcplogics/createEventHandleRecords:POST,/api/lcplogics/loadResponseHandleProcess:POST,/api/lcplogics/getMaxNumByEventHandleRecords:POST,/api/joint-loss-order:DELETE,/api/joint-loss-order:GET,/api/lcplogics/getAllCaseListByEventHandleId:POST,/api/lcplogics/createCommonEvent:POST,/api/lcplogics/getHandOverUserList:POST,/api/continue-reports:POST,/api/lcplogics/getReachOnRecords:POST,/api/event-handle-record:PUT,/api/lcplogics/loadCommonlyUsedOrderList:POST,/api/lcplogics/getPirceLibByLikeName:POST,/api/joint-loss-order:PUT,/api/lcplogics/getMyEventHandleInfos:POST,/api/lcplogics/getStandardTimeLenHandleNode:POST,/api/personnel-scheduling-rule:DELETE,/api/lcplogics/PersonnelSchedulingRuleList:POST,/api/lcplogics/getDeptListByParentId:POST,/api/lcplogics/personnelSchedulingRuleUpdate:POST,/api/lcplogics/PersonnelSchedulingRuleSave:POST,/api/lcplogics/personnelSchedulingRuleUpdateDefault:POST,/api/personnel-scheduling-rule:GET,/api/lcplogics/getPersonnelSchedulingRuleDetailByRuleId:POST,/api/lcplogics/loadCommonOrderByOffId:POST,/api/lcplogics/loadEscapeLawsuitClaimsOrderList:POST,/api/lcplogics/selectOrCreateLitigationInfoByClaimsEventId:POST,/api/lcplogics/loadCommonOrderByEventId:POST,/api/lcplogics/loadEvidence:POST,/api/lcplogics/examineProcess:POST,/api/lcplogics/examineHandProcess:POST,/api/process-node:PUT,/api/lcplogics/selectOffenderPayWayList:POST,/api/common-event:DELETE,/api/lcplogics/loadDisplayNameByName:POST,/api/lcplogics/loadHandleEventInfo:POST,/api/lcplogics/getToDoGeneralEventList:POST,/api/lcplogics/getToDoEscapeEventList:POST,/api/lcplogics/getAllLitigationClaimsCaseListH5:POST,/api/lcplogics/getAllSpecialClaimsCaseListH5:POST,/api/lcplogics/getAllCommonClaimsCaseListH5:POST,/api/lcplogics/loadHandleOverExamineData:POST,/api/lcplogics/loadLossExamineData:POST,/api/lcplogics/loadWindUpExamineData:POST,/api/lcplogics/loadRegisterExamineData:POST,/api/sys-msg-reading-record:PUT,/api/lcplogics/getToDoResponseEvents:POST,/api/lcplogics/getEventInfosCarsAll:POST,/api/lcplogics/logic1:POST,/api/lcplogics/getQuestionList:POST,/api/common-order/batch:PUT,/api/sys-operation-log/batch:POST,/api/lcplogics/getAllCommonClaimsCaseList:POST,/api/common-order/createOrUpdate:POST,/api/common-order:PUT,/api/common-accident-offender/createOrUpdate:POST,/api/common-accident-offender/batch:PUT,/api/common-union-evidentiary-material/batch:POST,/api/lcplogics/createOrderNo:POST,/api/lcplogics/LCAPSearchDeptUsers:POST,/api/lcplogics/LCAPUpdateDepartment:POST,/api/lcplogics/LCAPCreateDepartment:POST,/api/lcplogics/LCAPGetRoleNameList:POST,/api/lcplogics/LCAPLoadUserRoleMappingTableView1:POST,/api/lcplogics/LCAPGetUserNameList:POST,/api/lcplogics/LCAPLoadUserRoleMappingTableView:POST,/api/lcplogics/LCAPGetPermissionByRoleId:POST,/api/lcplogics/LCAPLoadDataMetaManagement:POST,/api/lcplogics/LCAPGetEntityMetaById:POST,/api/lcplogics/LCAPGetDataPermissionByResourceName:POST,/api/lcplogics/LCAPGetColumnRuleByDataPermissionId:POST,/api/lcplogics/LCAPGetLogicMetaById:POST,/api/lcplogics/LCAPGetRowRuleByDataPermissionId:POST,/api/lcplogics/LCAPLoadAddRoleUserTableView:POST,/api/lcplogics/LCAPLoadAddRolePermissionTableView:POST,/api/lcplogics/LCAPCreateDataPermission:POST,/api/lcplogics/LCAPGetDataPermissionIdByRoleId:POST,/api/l-c-a-p-data-permission/batch:DELETE,/api/l-c-a-p-column-rule/by:DELETE,/api/lcplogics/LCAPGetUserNameByUserId:POST,/api/lcplogics/LCAPCreateNormalUser:POST,/api/lcplogics/LCAPGetPermissionNameList:POST,/api/lcplogics/getAllLitigationClaimsCaseList:POST,/api/lcplogics/getAllSpecialClaimsCaseList:POST,/api/escape-offender-order/batch:DELETE,/api/common-order/batch:DELETE,/api/common-order/batch:POST,/api/escape-offender-order/batch:POST,/api/electronic-signature/batch:DELETE,/api/electronic-signature/batch:POST,/api/litigation-info/createOrUpdate:POST,/api/lcplogics/getAllEscapeCaseList:POST,/api/lcplogics/test2:POST,/api/litigation-info:PUT,/api/common-pay-way/batch:PUT,/api/lcplogics/createElectronicSignatureByEventHandleID:POST,/api/lcplogics/createOrUpdateEscapeOrder:POST,/api/common-accident-offender/batch:DELETE,/api/lcplogics/updateAccidentOrderPaidAmount:POST,/api/common-accident-offender/batch:POST,/api/escape-offender-order/batch:PUT,/api/common-pay-way/batch:POST,/api/joint-loss-order:POST,/api/highway-property-loss-order:POST,/api/hand-over-record:POST,/api/lcplogics/launchHandOverProcess:POST,/api/lcplogics/getHandleOverDataByHandleRecordId:POST,/api/hand-over-record:GET,/api/lcplogics/loadLossExamineHistoryData:POST,/api/lcplogics/loadWindUpExamineHistoryData:POST,/api/lcplogics/loadRegisterExamineHistoryData:POST,/api/lcplogics/loadHandleOverHistoryData:POST,/upload:POST,/upload/download_files:POST,/api/logics/downloadFile:POST,/api/logics/downloadFile:GET</code></span></pre>
+            <pre data-bulb-node-id="PU7a-1744707580028" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Fizh-1744707580027"><code class="token plain ">  gatewayUrl: ''</code></span></pre>
+            <pre data-bulb-node-id="2Slu-1744707580030" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="SXjA-1744707580029"><code class="token plain ">  uiResourceAddress: /client.js</code></span></pre>
+            <pre data-bulb-node-id="rX9N-1744707580032" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="siv5-1744707580031"><code class="token plain ">  gatewayType: light</code></span></pre>
+            <pre data-bulb-node-id="lRYm-1744707580034" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="pg8E-1744707580033"><code class="token plain ">  upload:</code></span></pre>
+            <pre data-bulb-node-id="4epM-1744707580036" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="givc-1744707580035"><code class="token plain ">    sinkType: s3</code></span></pre>
+            <pre data-bulb-node-id="3d4X-1744707580038" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="PxUa-1744707580037"><code class="token plain ">    sinkPath: /app</code></span></pre>
+            <pre data-bulb-node-id="PGgN-1744707580040" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="0BW2-1744707580039"><code class="token plain ">    s3Address: http://minio-api.nest.zeiet.com</code></span></pre>
+            <pre data-bulb-node-id="Gqcb-1744707580042" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="lSi0-1744707580041"><code class="token plain ">    s3AccessKey: ''</code></span></pre>
+            <pre data-bulb-node-id="zN9n-1744707580044" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="YSAs-1744707580043"><code class="token plain ">    s3SecretKey: ''</code></span></pre>
+            <pre data-bulb-node-id="USck-1744707580046" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="NZc0-1744707580045"><code class="token plain ">    s3Bucket: lowcode-static</code></span></pre>
+            <pre data-bulb-node-id="hims-1744707580048" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="U3o5-1744707580047"><code class="token plain ">    access: public</code></span></pre>
+            <pre data-bulb-node-id="po2C-1744707580050" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Asv9-1744707580049"><code class="token plain ">    ttl: -1.0</code></span></pre>
+            <pre data-bulb-node-id="ZD6m-1744707580052" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="pupz-1744707580051"><code class="token plain ">    cdnAddress: ''</code></span></pre>
+            <pre data-bulb-node-id="AdzE-1744707580054" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="frH2-1744707580053"><code class="token plain ">  logResponse: false</code></span></pre>
+            <pre data-bulb-node-id="uVPS-1744707580056" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="nu5m-1744707580055"><code class="token plain ">  logRequest: true</code></span></pre>
+            <pre data-bulb-node-id="hs73-1744707580058" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="N54N-1744707580057"><code class="token plain ">  report:</code></span></pre>
+            <pre data-bulb-node-id="pOpH-1744707580060" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="ggaO-1744707580059"><code class="token plain ">    host: ''</code></span></pre>
+            <pre data-bulb-node-id="8rtq-1744707580062" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Pw0n-1744707580061"><code class="token plain ">    tokenKey: ''</code></span></pre>
+            <pre data-bulb-node-id="p4uL-1744707580064" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="d0Pu-1744707580063"><code class="token plain ">    domainId: null</code></span></pre>
+            <pre data-bulb-node-id="HL31-1744707580066" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="pB8y-1744707580065"><code class="token plain ">    projectId: null</code></span></pre>
+            <pre data-bulb-node-id="U0N5-1744707580068" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Kqe5-1744707580067"><code class="token plain ">    reportIdMap: {}</code></span></pre>
+            <pre data-bulb-node-id="Brf7-1744707580070" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="kpcg-1744707580069"><code class="token plain ">    componentIdMap: {}</code></span></pre>
+            <pre data-bulb-node-id="qgj0-1744707580072" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="m7ru-1744707580071"><code class="token plain ">  nuims: http://nuims.low-code:8081</code></span></pre>
+            <pre data-bulb-node-id="fNCb-1744707580074" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="4GFI-1744707580073"><code class="token plain ">  private: null</code></span></pre>
+            <pre data-bulb-node-id="1h6T-1744707580076" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="SQhq-1744707580075"><code class="token plain ">  process:</code></span></pre>
+            <pre data-bulb-node-id="XYwe-1744707580078" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="ansG-1744707580077"><code class="token plain ">    database:</code></span></pre>
+            <pre data-bulb-node-id="eIuz-1744707580080" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="RWbL-1744707580079"><code class="token plain ">      schema: ''</code></span></pre>
+            <pre data-bulb-node-id="NMjd-1744707580082" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Pzhn-1744707580081"><code class="token plain ">      table:</code></span></pre>
+            <pre data-bulb-node-id="LA4j-1744707580084" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Zqi2-1744707580083"><code class="token plain ">        prefix: P416E03F_</code></span></pre>
+            <pre data-bulb-node-id="kba6-1744707580086" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="1KVX-1744707580085"><code class="token plain ">      isPlugin: false</code></span></pre>
+            <pre data-bulb-node-id="TVpp-1744707580088" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="hqdo-1744707580087"><code class="token plain ">  frontends:</code></span></pre>
+            <pre data-bulb-node-id="7o2k-1744707580090" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="hvcf-1744707580089"><code class="token plain ">    pc:</code></span></pre>
+            <pre data-bulb-node-id="Q7Ym-1744707580092" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="DhAq-1744707580091"><code class="token plain ">      name: pc</code></span></pre>
+            <pre data-bulb-node-id="UPzE-1744707580094" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Ts9Q-1744707580093"><code class="token plain ">      path: /</code></span></pre>
+            <pre data-bulb-node-id="ZTBV-1744707580096" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="GLjI-1744707580095"><code class="token plain ">      title: PC端</code></span></pre>
+            <pre data-bulb-node-id="GG7W-1744707580098" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="fk8w-1744707580097"><code class="token plain ">      type: pc</code></span></pre>
+            <pre data-bulb-node-id="hFOk-1744707580100" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="LPMR-1744707580099"><code class="token plain ">    m:</code></span></pre>
+            <pre data-bulb-node-id="5HDU-1744707580102" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="D0L7-1744707580101"><code class="token plain ">      name: m</code></span></pre>
+            <pre data-bulb-node-id="XonQ-1744707580104" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="5XS4-1744707580103"><code class="token plain ">      path: /m</code></span></pre>
+            <pre data-bulb-node-id="jyas-1744707580106" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="2TLQ-1744707580105"><code class="token plain ">      title: H5端</code></span></pre>
+            <pre data-bulb-node-id="QdWe-1744707580108" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="AXyu-1744707580107"><code class="token plain ">      type: h5</code></span></pre>
+            <pre data-bulb-node-id="9ZHF-1744707580110" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="qUDY-1744707580109"><code class="token plain ">  quartzTables:</code></span></pre>
+            <pre data-bulb-node-id="ltUR-1744707580112" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="lEZc-1744707580111"><code class="token plain ">    SIMPROP_TRIGGERS: N416E03F_SIMPROP_TRIGGERS</code></span></pre>
+            <pre data-bulb-node-id="MLeL-1744707580114" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="ZnLI-1744707580113"><code class="token plain ">    BLOB_TRIGGERS: N416E03F_BLOB_TRIGGERS</code></span></pre>
+            <pre data-bulb-node-id="Gy6J-1744707580116" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="1bjA-1744707580115"><code class="token plain ">    TRIGGERS: N416E03F_TRIGGERS</code></span></pre>
+            <pre data-bulb-node-id="b3xw-1744707580118" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="otPW-1744707580117"><code class="token plain ">    SIMPLE_TRIGGERS: N416E03F_SIMPLE_TRIGGERS</code></span></pre>
+            <pre data-bulb-node-id="lbVn-1744707580120" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="i70O-1744707580119"><code class="token plain ">    LOCKS: N416E03F_LOCKS</code></span></pre>
+            <pre data-bulb-node-id="uLOd-1744707580122" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="hq2n-1744707580121"><code class="token plain ">    CRON_TRIGGERS: N416E03F_CRON_TRIGGERS</code></span></pre>
+            <pre data-bulb-node-id="Bz5f-1744707580124" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="aBf5-1744707580123"><code class="token plain ">    FIRED_TRIGGERS: N416E03F_FIRED_TRIGGERS</code></span></pre>
+            <pre data-bulb-node-id="R2wp-1744707580126" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="nBEL-1744707580125"><code class="token plain ">    CALENDARS: N416E03F_CALENDARS</code></span></pre>
+            <pre data-bulb-node-id="iUUu-1744707580128" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="K8oP-1744707580127"><code class="token plain ">    JOB_DETAILS: N416E03F_JOB_DETAILS</code></span></pre>
+            <pre data-bulb-node-id="kgv3-1744707580130" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="viFQ-1744707580129"><code class="token plain ">    SCHEDULER_STATE: N416E03F_SCHEDULER_STATE</code></span></pre>
+            <pre data-bulb-node-id="ydM8-1744707580132" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="0C2Y-1744707580131"><code class="token plain ">    PAUSED_TRIGGER_GRPS: N416E03F_PAUSED_TRIGGER_GRPS</code></span></pre>
+            <pre data-bulb-node-id="BYKI-1744707580134" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="5vCJ-1744707580133"><code class="token plain ">upload:</code></span></pre>
+            <pre data-bulb-node-id="PRAj-1744707580136" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Wfms-1744707580135"><code class="token plain ">  base-path: app</code></span></pre>
+            <pre data-bulb-node-id="8FeG-1744707580138" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="vdnj-1744707580137"><code class="token plain ">file:</code></span></pre>
+            <pre data-bulb-node-id="ebQL-1744707580140" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="kMXP-1744707580139"><code class="token plain ">  types: text/plain;text/html;text/css;application/javascript</code></span></pre>
+            <pre data-bulb-node-id="6GGL-1744707580142" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="3FK4-1744707580141"><code class="token plain ">extensions:</code></span></pre>
+            <pre data-bulb-node-id="k4Go-1744707627271" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="2oO9-1744707627270"><code class="token plain ">     # 修改点：依赖库配置，对应平台ide的应用配置-自定义参数配置</code></span></pre>
+            <pre data-bulb-node-id="iLx8-1744707580144" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="GbLi-1744707580143"><code class="token plain ">  lcap_annotation_data_permission:</code></span></pre>
+            <pre data-bulb-node-id="odp1-1744707580146" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="GGLZ-1744707580145"><code class="token plain ">    custom:</code></span></pre>
+            <pre data-bulb-node-id="KUQr-1744707580148" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="BluN-1744707580147"><code class="token plain ">      dataPermissionCacheExpireSeconds: '60'</code></span></pre>
+            <pre data-bulb-node-id="m9WD-1744707580150" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="9K1G-1744707580149"><code class="token plain ">      dataPermissionCacheMaximumSize: '60'</code></span></pre>
+            <pre data-bulb-node-id="Th19-1744707580152" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="f34n-1744707580151"><code class="token plain ">      skipLCAPEntity: 'true'</code></span></pre>
+            <pre data-bulb-node-id="i20x-1744707580154" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="RItg-1744707580153"><code class="token plain ">      enableLog: 'true'</code></span></pre>
+            <pre data-bulb-node-id="LLSy-1744707580156" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="wW4H-1744707580155"><code class="token plain ">  auth_library_template:</code></span></pre>
+            <pre data-bulb-node-id="jDl8-1744707580158" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="g9cP-1744707580157"><code class="token plain ">    custom:</code></span></pre>
+            <pre data-bulb-node-id="MYCt-1744707580160" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="zzow-1744707580159"><code class="token plain ">      workWechatFileName: WW_verify_xxxxxxxxx.txt</code></span></pre>
+            <pre data-bulb-node-id="dvhJ-1744707580162" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="qfj7-1744707580161"><code class="token plain ">      workWechatFileSecret: '123456'</code></span></pre>
+            <pre data-bulb-node-id="NzOI-1744707580164" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="TUJa-1744707580163"><code class="token plain ">  es_search_tool:</code></span></pre>
+            <pre data-bulb-node-id="03pL-1744707580166" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="oAiI-1744707580165"><code class="token plain ">    custom:</code></span></pre>
+            <pre data-bulb-node-id="AqDq-1744707580168" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="D0bX-1744707580167"><code class="token plain ">      EsClientHost: ''</code></span></pre>
+            <pre data-bulb-node-id="9Z74-1744707580170" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="j7tM-1744707580169"><code class="token plain ">      EsClientPort: ''</code></span></pre>
+            <pre data-bulb-node-id="pCse-1744707580172" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="ExUa-1744707580171"><code class="token plain ">      EsClientUsername: ''</code></span></pre>
+            <pre data-bulb-node-id="X1hW-1744707580174" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="CFT9-1744707580173"><code class="token plain ">      EsClientPassword: ''</code></span></pre>
+            <pre data-bulb-node-id="kV5X-1744707580176" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="AIaF-1744707580175"><code class="token plain ">  cw_amap:</code></span></pre>
+            <pre data-bulb-node-id="lZ7I-1744707580178" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="TaxM-1744707580177"><code class="token plain ">    custom:</code></span></pre>
+            <pre data-bulb-node-id="zN3U-1744707580180" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="f6ie-1744707580179"><code class="token plain ">      APP_SECERT_KEY: 29feb90f03146f1a8027577911a18756</code></span></pre>
+            <pre data-bulb-node-id="kcsC-1744707580182" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="BZgu-1744707580181"><code class="token plain ">      APP_KEY: 79f9411ce32392050606b59426f287c7</code></span></pre>
+            <pre data-bulb-node-id="1dyx-1744707580184" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="vyis-1744707580183"><code class="token plain ">logicAuthFlag: true</code></span></pre>
+            <pre data-bulb-node-id="BbFK-1744707580186" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="FGwL-1744707580185"><code class="token plain ">auth:</code></span></pre>
+            <pre data-bulb-node-id="yvY1-1744707580188" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="lmOk-1744707580187"><code class="token plain ">  token:</code></span></pre>
+            <pre data-bulb-node-id="EImr-1744707580190" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="r5vl-1744707580189"><code class="token plain ">    secret: 99f1a2bddce2f6e</code></span></pre>
+            <pre data-bulb-node-id="5zdx-1744707580192" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="YvFD-1744707580191"><code class="token plain ">    expire: 86400</code></span></pre>
+            <pre data-bulb-node-id="qviD-1744707580194" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="UmUC-1744707580193"><code class="token plain ">  plugin:</code></span></pre>
+            <pre data-bulb-node-id="XuoA-1744707580196" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="4MEE-1744707580195"><code class="token plain ">    list:</code></span></pre>
+            <pre data-bulb-node-id="LE6K-1744707580198" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="lwpF-1744707580197"><code class="token plain ">      Normal:</code></span></pre>
+            <pre data-bulb-node-id="nbyL-1744707580200" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="whpc-1744707580199"><code class="token plain ">        category: main</code></span></pre>
+            <pre data-bulb-node-id="bRJP-1744707580202" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Zd4O-1744707580201"><code class="token plain ">  types: Normal</code></span></pre>
+            <pre data-bulb-node-id="V9Gn-1744707580204" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="RQyH-1744707580203"><code class="token plain ">  Normal: '{"category":"main"}'</code></span></pre>
+            <pre data-bulb-node-id="rh7A-1744707580206" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="XBst-1744707580205"><code class="token plain ">connector:</code></span></pre>
+            <pre data-bulb-node-id="aRTs-1744707674750" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="cTse-1744707674749"><code class="token plain ">    # 修改点：连接器配置</code></span></pre>
+            <pre data-bulb-node-id="ig5x-1744707580208" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="i7c4-1744707580207"><code class="token plain ">  default_fileStorage_connection: # 修改点：minio存储文件连接器</code></span></pre>
+            <pre data-bulb-node-id="QKs2-1744707580210" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="X7Su-1744707580209"><code class="token plain ">    accessKey: ''</code></span></pre>
+            <pre data-bulb-node-id="Wvyz-1744707580212" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="DBA5-1744707580211"><code class="token plain ">    secretKey: ''</code></span></pre>
+            <pre data-bulb-node-id="QLx7-1744707580214" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="wOwF-1744707580213"><code class="token plain ">    bucket: lowcode-static</code></span></pre>
+            <pre data-bulb-node-id="zF5J-1744707580216" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="SKg2-1744707580215"><code class="token plain ">    privateBucket: 'false'</code></span></pre>
+            <pre data-bulb-node-id="EUau-1744707580218" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="XLrG-1744707580217"><code class="token plain ">    endpoint: http://minio-api.nest.zeiet.com</code></span></pre>
+            <pre data-bulb-node-id="Bt3Q-1744707580220" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="V2cM-1744707580219"><code class="token plain ">    pathStyleAccessEnabled: 'true'</code></span></pre>
+            <pre data-bulb-node-id="JYLK-1744707580222" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="PxgR-1744707580221"><code class="token plain ">    cdnAddress: null</code></span></pre>
+            <pre data-bulb-node-id="xuXC-1744707580224" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="7br3-1744707580223"><code class="token plain ">    sinkPath: /app</code></span></pre>
+            <pre data-bulb-node-id="UjpC-1744707580226" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="X2uq-1744707580225"><code class="token plain ">  Lc:# 修改点：redis连接器</code></span></pre>
+            <pre data-bulb-node-id="Uyfc-1744707580228" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="bxk9-1744707580227"><code class="token plain ">    address: 172.16.8.189</code></span></pre>
+            <pre data-bulb-node-id="bsGZ-1744707580230" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="bB7C-1744707580229"><code class="token plain ">    port: '6379'</code></span></pre>
+            <pre data-bulb-node-id="Myhv-1744707580232" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="2ZFK-1744707580231"><code class="token plain ">    password: KFFNmZg3</code></span></pre>
+            <pre data-bulb-node-id="dRGY-1744707580234" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="RX21-1744707580233"><code class="token plain ">    database: '0'</code></span></pre>
+            <pre data-bulb-node-id="5NpT-1744707580236" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="9sjS-1744707580235"><code class="token plain ">  本地存储: # 修改点：本地存储文件连接器</code></span></pre>
+            <pre data-bulb-node-id="p9vQ-1744707580238" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="PB1q-1744707580237"><code class="token plain ">    accessKey: aaa</code></span></pre>
+            <pre data-bulb-node-id="NhMX-1744707580240" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="alil-1744707580239"><code class="token plain ">    secretKey: a</code></span></pre>
+            <pre data-bulb-node-id="PZPJ-1744707580242" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="P8gM-1744707580241"><code class="token plain ">    bucket: a</code></span></pre>
+            <pre data-bulb-node-id="lb87-1744707580244" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="NqA6-1744707580243"><code class="token plain ">    privateBucket: 'false'    </code></span></pre>
+            <pre data-bulb-node-id="L2np-1744707580246" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="h59B-1744707580245"><code class="token plain ">    endpoint: a</code></span></pre>
+            <pre data-bulb-node-id="EgTQ-1744707580248" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="9nfB-1744707580247"><code class="token plain ">    pathStyleAccessEnabled: 'false'</code></span></pre>
+            <pre data-bulb-node-id="yGbV-1744707580250" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="OW4w-1744707580249"><code class="token plain ">    cdnAddress: null</code></span></pre>
+            <pre data-bulb-node-id="uZW2-1744707580252" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Db6d-1744707580251"><code class="token plain ">    sinkPath: local;/home/ubuntu/localfile</code></span></pre>
+            <pre data-bulb-node-id="Sbpq-1744707580254" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="yeRH-1744707580253"><code class="token plain ">gw:</code></span></pre>
+            <pre data-bulb-node-id="4BHR-1744707580256" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="O1kT-1744707580255"><code class="token plain ">  app:</code></span></pre>
+            <pre data-bulb-node-id="rHIb-1744707580258" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="kEMT-1744707580257"><code class="token plain ">    addr:</code></span></pre>
+            <pre data-bulb-node-id="UsDJ-1744707710797" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="olo8-1744707710796"><code class="token plain ">        # 修改点：api接口地址</code></span></pre>
+            <pre data-bulb-node-id="K0H1-1744792904605" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="sWrc-1744792904604"><code class="token plain ">     # jdsystem: http://lc-svc-jdsystem-online-zhjt-1.ns-hz-ten-zhjt:8080</code></span></pre>
+            <pre data-bulb-node-id="iEj3-1744792904607" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="e7Kf-1744792904606"><code class="token plain ">      #jdsystem-OpenSSL: false</code></span></pre>
+            <pre data-bulb-node-id="4SA2-1744792904609" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="MTmR-1744792904608"><code class="token plain ">      lowcode: http://lcap.low-code:22988</code></span></pre>
+            <pre data-bulb-node-id="0yQ4-1744792904612" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="QnDY-1744792904611"><code class="token plain ">      LcApplication-OpenSSL: true</code></span></pre>
+            <pre data-bulb-node-id="li2c-1744792904614" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="9Nk6-1744792904613"><code class="token plain ">      emergencyResponse-OpenSSL: true</code></span></pre>
+            <pre data-bulb-node-id="GJww-1744792904616" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="4bqZ-1744792904615"><code class="token plain ">      emergencyResponse: http://172.16.8.189:8223</code></span></pre>
+            <pre data-bulb-node-id="O87J-1744792904618" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="uwaD-1744792904617"><code class="token plain ">     # jdoperation-OpenSSL: false</code></span></pre>
+            <pre data-bulb-node-id="PdwD-1744792904620" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="mRkH-1744792904619"><code class="token plain ">      nuims: http://nuims.low-code:8081</code></span></pre>
+            <pre data-bulb-node-id="wH50-1744792904622" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="WFoV-1744792904621"><code class="token plain ">      lcbh: http://172.16.8.189:8081</code></span></pre>
+            <pre data-bulb-node-id="qO1P-1744792904624" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="Cfd7-1744792904623"><code class="token plain ">     # jdyth_device-OpenSSL: true</code></span></pre>
+            <pre data-bulb-node-id="7Xfm-1744792904626" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="QQYl-1744792904625"><code class="token plain ">     # jdoperation: http://lc-svc-jdoperation-dev-zhjt-1.ns-hz-ten-zhjt:8080</code></span></pre>
+            <pre data-bulb-node-id="uMOX-1744792904628" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="tqk6-1744792904627"><code class="token plain ">      #jdyth_device: http://12.1.150.55:5000</code></span></pre>
+            <pre data-bulb-node-id="jMnu-1744792904630" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="ASZM-1744792904629"><code class="token plain ">      lctasktimed-OpenSSL: false</code></span></pre>
+            <pre data-bulb-node-id="WXA0-1744792904632" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="WXoW-1744792904631"><code class="token plain ">      lctasktimed: http://172.16.8.189:8083</code></span></pre>
+            <pre data-bulb-node-id="9qHW-1744792904634" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="ml79-1744792904633"><code class="token plain ">      getAddress-OpenSSL: true</code></span></pre>
+            <pre data-bulb-node-id="wC07-1744792904636" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="hJbN-1744792904635"><code class="token plain ">      getAddress: https://restapi.amap.com</code></span></pre>
+            <pre data-bulb-node-id="qYDW-1744792904638" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="CQ9L-1744792904637"><code class="token plain ">      lcbh-OpenSSL: false</code></span></pre>
+            <pre data-bulb-node-id="mq9y-1744792904640" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="aZ6i-1744792904639"><code class="token plain ">      LcApplication: http://172.16.8.189:8223</code></span></pre>
+            <pre data-bulb-node-id="Oatl-1744707580297" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="cQzG-1744707580296"><code class="token plain ">custom:</code></span></pre>
+            <pre data-bulb-node-id="ZXZj-1744707718844" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="dB46-1744707718843"><code class="token plain ">    # 修改点：应用配置-自定义配置-手动添加</code></span></pre>
+            <pre data-bulb-node-id="WT83-1744707580299" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="7Snf-1744707580298"><code class="token plain ">  url: http://172.16.8.189:3080/m</code></span></pre>
+            <pre data-bulb-node-id="ZTyC-1744707580301" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="t6Wa-1744707580300"><code class="token plain ">  filePath: /upload/DamageList.xml?fileName=DamageList.xml&amp;fut=1740993023656&amp;ai=416e03ff-e526-4fce-aa03-5b9bc553b844&amp;con=lcap_default_connection&amp;fpp=/app</code></span></pre>
+            <pre data-bulb-node-id="Jexx-1744707580303" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="nWST-1744707580302"><code class="token plain ">  baseUrl: http://172.16.8.189:2080</code></span></pre>
+            <pre data-bulb-node-id="TqIs-1744707580305" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="FEiv-1744707580304"><code class="token plain ">  api:</code></span></pre>
+            <pre data-bulb-node-id="gY2V-1744707580307" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="bwlm-1744707580306"><code class="token plain ">    context-path: /</code></span></pre>
+            <pre data-bulb-node-id="FXih-1744707580309" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="uKbd-1744707580308"><code class="token plain ">  system:</code></span></pre>
+            <pre data-bulb-node-id="yh5j-1744707580311" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="73Qy-1744707580310"><code class="token plain ">    time-zone: user</code></span></pre>
+            <pre data-bulb-node-id="iKnq-1744707580313" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="OiDG-1744707580312"><code class="token plain ">fileStorage:</code></span></pre>
+            <pre data-bulb-node-id="mPxt-1744707580315" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="6AMT-1744707580314"><code class="token plain ">  lcap_default_connection: '{"refConnection":"","defaultConnection":false,"title":"系统文件存储"}'</code></span></pre>
+            <pre data-bulb-node-id="R3Mp-1744707580317" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="FV6V-1744707580316"><code class="token plain ">  lcap_file_group_0: '{"refConnection":"app.connections.本地存储","defaultConnection":true,"title":"本地"}'</code></span></pre>
+            <pre data-bulb-node-id="GSRu-1744707580319" data-block-type="code-line"
+                class="css-16mnrql"><span data-bulb-node-id="zo6G-1744707580318"><code class="token plain "><span>&nbsp;</span></code></span></pre>
+        </div>
+    </div>
+</div>

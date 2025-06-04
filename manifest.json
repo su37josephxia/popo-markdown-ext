@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "获取页面标题",
+  "version": "1.0",
+  "description": "点击按钮获取当前页面的标题。",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
