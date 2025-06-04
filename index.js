@@ -5,15 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
   getActiveTab();
   const getTitleButton = document.getElementById('getTitleButton');
   const titleDisplay = document.getElementById('titleDisplay');
-  const toMarkdown = document.getElementById('toMarkdown');
-
-  toMarkdown.addEventListener('click', function () {
-    setTimeout(async () => {
-      await callDifyAgent("你好，Dify！").then(answer => {
-        console.log("回答:", answer);
-      })
-    },)
-  })
 
   getTitleButton.addEventListener('click', function () {
 
@@ -31,11 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (injectionResults && injectionResults.length > 0 && injectionResults[0].result) {
           const content = injectionResults[0].result;
           // console.log('content', content)
-          await convertHTMLToMarkdown(content, console.log)
+          const markdown = await convertHTMLToMarkdown(content, console.log)
 
           titleDisplay.textContent = `HTML获取成功,已复制到剪贴板`;
           // 复制到剪贴板
-          // navigator.clipboard.writeText(html).then(
+          navigator.clipboard.writeText(markdown)
+          // .then(
           //   function () {
           //     copyButton.textContent = '已复制';
           //     setTimeout(function () {
