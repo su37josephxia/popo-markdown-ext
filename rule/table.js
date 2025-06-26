@@ -1,14 +1,17 @@
 
 const PopoTableRule = {
-    install(turndownService) {
+    install(turndownService, log) {
 
         // 支持表格转换
         turndownService.addRule('table', {
             filter: ['table'],
             replacement: function (content, node) {
                 // 提取表头和数据行
-                const headerRow = node.querySelector('thead tr');
-                const bodyRows = node.querySelectorAll('tbody tr'); // 支持 tbody
+                // const headerRow = node.querySelectorAll('tbody tr')[0];
+                // const bodyRows = node.querySelectorAll('tbody tr'); // 支持 tbody
+
+                const [headerRow, ...bodyRows] = node.querySelectorAll('tbody tr');
+
                 let markdown = '|';
                 if (headerRow) {
                     // 表格开始
